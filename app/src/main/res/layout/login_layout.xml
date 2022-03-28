@@ -10,24 +10,32 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="#2c2c2c" />
+        android:src="#2c2c2c"
+        tools:ignore="ImageContrastCheck" />
 
     <EditText
+        android:background="@drawable/borda"
+        android:drawableRight="@drawable/ic_baseline_email_24"
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/insira_o_usu_rio"
         android:inputType="textPersonName"
         android:maxLength="100"
-        android:textColorHint="#757575" />
+        android:textColorHint="#757575"
+        android:padding="8dp"/>
 
     <EditText
+        android:background="@drawable/borda"
+        android:drawableRight="@drawable/ic_baseline_lock_24"
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
-        android:maxLength="50" />
+        android:maxLength="50"
+        android:padding="8dp"
+        />
 
     <Button
         android:id="@+id/btnEntrar"

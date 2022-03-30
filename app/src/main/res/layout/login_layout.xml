@@ -55,4 +55,20 @@
         android:layout_height="wrap_content"
         android:text="@string/esqueceu_sua_senha" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_baseline_favorite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 </LinearLayout>

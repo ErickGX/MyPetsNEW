@@ -41,7 +41,9 @@
         android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar" />
+        android:text="@string/entrar"
+        android:textAllCaps="false"
+        text/>
 
     <Button
         android:id="@+id/btnSair"
@@ -58,8 +60,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="57dp"
         android:hint="Insira seu nome"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/ic_baseline_favorite">
 
@@ -67,8 +71,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            />
+            android:maxLength="9" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kek"
+        style="button"/>
+
+
 
 </LinearLayout>

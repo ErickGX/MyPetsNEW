@@ -26,16 +26,15 @@
         android:padding="8dp"/>
 
     <EditText
-        android:background="@drawable/borda"
-        android:drawableRight="@drawable/ic_baseline_lock_24"
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:drawableRight="@drawable/ic_baseline_lock_24"
         android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
         android:maxLength="50"
-        android:padding="8dp"
-        />
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/btnEntrar"
@@ -43,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="@string/entrar"
         android:textAllCaps="false"
-        text/>
+        />
 
     <Button
         android:id="@+id/btnSair"
@@ -77,9 +76,10 @@
 
 
     <Button
+        android:onClick="acessaJanela"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="kek"
+        android:text="Acessar"
         style="button"/>
 
 

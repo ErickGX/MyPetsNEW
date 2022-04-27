@@ -2,10 +2,12 @@ package br.com.etecia.mypets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     //Declarar ps componentes qie serao utilizados nojava
@@ -28,13 +30,47 @@ public class LoginActivity extends AppCompatActivity {
 
         //Eventos de clique dos botoes
 
-        btnSair.setOnClickListener(new View.OnClickListener() {
+
+
+        btnSair.setOnClickListener(new View.OnClickListener() { //evento de clique busca oque o usuario quer fazer
             @Override
             public void onClick(View view) {
+
                 finish();
             }
         });
 
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String nome = edtUsuario.getText().toString();
+                String email = edtSenha.getText().toString();
+
+                if (nome.equals("etecia") && email.equals("etecia")){
+
+
+                    //abrindo outra janela
+
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                }
+
+                else {
+
+
+                }
+
+
+
+
+
+
+                Toast.makeText(getApplicationContext(),
+                        "Bem vindo ao sistema",
+                        Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
     }
 

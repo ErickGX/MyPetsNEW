@@ -33,7 +33,7 @@
         android:drawableRight="@drawable/ic_baseline_lock_24"
         android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
-        android:maxLength="50"
+        android:maxLength="51"
         android:padding="8dp" />
 
     <Button

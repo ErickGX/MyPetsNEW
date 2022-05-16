@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".CardViewActivity">
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add"
+        />
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/idcardView"
         android:layout_width="300dp"
@@ -117,7 +125,7 @@
 </LinearLayout>
             <Button
                 android:id="@+id/btnreserva1"
-                android:layout_width="65dp"
+                android:layout_width="90dp"
                 android:layout_height="40dp"
                 android:text="RESERVE"
                 android:layout_gravity="center"

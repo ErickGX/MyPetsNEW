@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class CardViewActivity extends AppCompatActivity {
@@ -39,7 +40,8 @@ public class CardViewActivity extends AppCompatActivity {
         idcardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(getApplicationContext(),"Cliquei no cardview!!!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -47,13 +49,16 @@ public class CardViewActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(getApplicationContext(),"Reservado as 5:30!!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Reservado as 7:30!!!",
+                        Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -61,6 +66,8 @@ public class CardViewActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Reservado as 8:00!!!",
+                        Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -68,13 +75,16 @@ public class CardViewActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(getApplicationContext(),"Reservado as 9:00!!!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
         btnreserva1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Reserva Concluida!!!",
+                        Toast.LENGTH_SHORT).show();
 
             }
         });

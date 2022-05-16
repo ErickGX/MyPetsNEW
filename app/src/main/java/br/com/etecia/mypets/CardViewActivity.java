@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 
 public class CardViewActivity extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class CardViewActivity extends AppCompatActivity {
     Button btn3;
     Button btn4;
     Button btnreserva1;
+    FloatingActionButton idFABCafe;
 
 
     @Override
@@ -35,7 +38,16 @@ public class CardViewActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
         btnreserva1 = findViewById(R.id.btnreserva1);
+        idFABCafe = findViewById(R.id.idFABCafe);
 
+
+        idFABCafe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"ALA FLUTOA",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
         idcardView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -88,28 +88,35 @@
     android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn1"
                 android:layout_width="65dp"
                 android:layout_height="38dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight=""
+                android:layout_marginRight="2dp"
                 android:text="5:30PM"/>
 
             <Button
+                android:id="@+id/btn2"
                 android:layout_width="65dp"
                 android:layout_height="38dp"
+                android:layout_marginRight="2dp"
                 android:text="7:30PM" />
 
             <Button
+                android:id="@+id/btn3"
                 android:layout_width="65dp"
                 android:layout_height="38dp"
+                android:layout_marginRight="2dp"
                 android:text="8:00PM" />
 
             <Button
+                android:id="@+id/btn4"
                 android:layout_width="65dp"
                 android:layout_height="38dp"
                 android:text="9:00PM" />
 </LinearLayout>
             <Button
+                android:id="@+id/btnreserva1"
                 android:layout_width="65dp"
                 android:layout_height="40dp"
                 android:text="RESERVE"
